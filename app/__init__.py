@@ -1,0 +1,1 @@
+"""Synthetic public portfolio package."""

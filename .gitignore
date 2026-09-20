@@ -1,0 +1,37 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-tmp/
+.venv/
+venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+credentials*.json
+client_secret*.json
+token*.json
+*.pem
+*.key
+
+# Runtime, personal, and generated data
+runtime/
+app/data/
+app/output/
+applications/
+recovery/
+app/data/application_executions/
+app/data/application_packages/
+app/data/application_prepared/
+app/data/application_reviews/
+app/data/recovery/
+
+# Databases, backups, and logs
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.backup
+*.log

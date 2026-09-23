@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .pytest-tmp/
+.pytest-tmp-public/
 .venv/
 venv/
 
@@ -18,6 +19,7 @@ token*.json
 
 # Runtime, personal, and generated data
 runtime/
+runtime/demo-auth.db
 app/data/
 app/output/
 applications/

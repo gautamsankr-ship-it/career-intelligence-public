@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Recruiter demo</title></head>
+<body><main><p><a href="/logout">Log out</a></p>
+<h1>Synthetic recruiter demonstration — read-only</h1>
+<p>No private candidate, CRM, application, document, or integration data is loaded.</p>
+{% for metric in metrics %}<p><strong>{{ metric.value }}</strong> {{ metric.label }}</p>{% endfor %}
+<h2>Synthetic opportunities</h2><ul>{% for item in opportunities %}<li>{{ item.company }} — {{ item.role }} — {{ item.location }} — {{ item.status }}</li>{% endfor %}</ul>
+</main></body></html>

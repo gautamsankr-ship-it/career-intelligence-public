@@ -3,7 +3,7 @@ from fastapi.testclient import TestClient
 from app.api.dashboard import app
 
 
-def test_dashboard_exposes_synthetic_action_required_page() -> None:
-    response = TestClient(app).get("/action-required")
+def test_dashboard_health_is_public_and_synthetic() -> None:
+    response = TestClient(app).get("/health")
     assert response.status_code == 200
-    assert "synthetic answer group" in response.text
+    assert response.json() == {"status": "healthy", "demo": True}
